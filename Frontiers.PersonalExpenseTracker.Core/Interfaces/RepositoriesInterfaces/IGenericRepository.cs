@@ -9,7 +9,7 @@ namespace Frontiers.PersonalExpenseTracker.Core.Interfaces.RepositoriesInterface
     public interface IGenericRepository<T> where T : class, IEntity
     {
         IEnumerable<T> GetAll();
-        T? GetByIdAsync(Guid id);
+        T? GetById(Guid id);
         void Add(T entity);
         void Update(T entity);
         void Delete(Guid id);

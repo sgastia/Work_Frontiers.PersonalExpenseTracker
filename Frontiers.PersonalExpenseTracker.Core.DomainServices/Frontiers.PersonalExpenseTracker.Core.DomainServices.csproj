@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Frontiers.PersonalExpenseTracker.Core\Frontiers.PersonalExpenseTracker.Core.csproj" />
+  </ItemGroup>
+
 </Project>

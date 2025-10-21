@@ -10,15 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Frontiers.PersonalExpenseTracker.Core.DomainServices\Frontiers.PersonalExpenseTracker.Core.DomainServices.csproj" />
+    <ProjectReference Include="..\Frontiers.PersonalExpenseTracker.Core\Frontiers.PersonalExpenseTracker.Core.csproj" />
+    <ProjectReference Include="..\Frontiers.PersonalExpenseTracker.Infrastructure\Frontiers.PersonalExpenseTracker.Infrastructure.csproj" />
     <ProjectReference Include="..\frontiers.personalexpensetracker.ui.client\frontiers.personalexpensetracker.ui.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>9.*-*</Version>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="9.0.6" />
   </ItemGroup>
 
 </Project>

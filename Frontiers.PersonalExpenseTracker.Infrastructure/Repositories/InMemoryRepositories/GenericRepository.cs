@@ -11,7 +11,9 @@ namespace Frontiers.PersonalExpenseTracker.Infrastructure.Repositories.InMemoryR
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class, IEntity
     {
-        private readonly ConcurrentDictionary<Guid, T> _entities = new ConcurrentDictionary<Guid, T>();
+        //It is static for mock porposes, so all instances of the repository share the same data
+        private static readonly ConcurrentDictionary<Guid, T> _entities = new ConcurrentDictionary<Guid, T>();
+
         public void Add(T entity)
         {
             if(_entities.ContainsKey(entity.Id))
@@ -31,7 +33,7 @@ namespace Frontiers.PersonalExpenseTracker.Infrastructure.Repositories.InMemoryR
             return _entities.Values.ToList();
         }
 
-        public T? GetByIdAsync(Guid id)
+        public T? GetById(Guid id)
         {
             if (_entities.ContainsKey(id) == false)
                 throw new ArgumentException($"Entity with Id {id} doesn't exist.");
