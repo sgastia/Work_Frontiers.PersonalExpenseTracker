@@ -21,10 +21,10 @@ export class ExpensesListComponent implements OnInit {
   private expensesService = inject(ExpenseService);
 
   tableColumns: string[] = ['date', 'amount', 'category', 'description'];
-  //tableData: Expense[] = [];
-  tableData: Expense[] = TEST_DATA;
+  tableData: Expense[] = [];
+  //tableData: Expense[] = TEST_DATA;
   ngOnInit(): void {
-    //this.expensesService.listExpenses().subscribe(data => { this.tableData = data; });
+    this.expensesService.listExpenses().subscribe(data => { this.tableData = data; });
   };
 
 }

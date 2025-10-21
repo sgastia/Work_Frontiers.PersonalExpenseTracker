@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ExpensesListComponent } from './expenses/expenses-list/expenses-list.component';
 import { CategoriesListComponent } from './categories/categories-list/categories-list.component';
-
+import { ExpenseDetailComponent } from './expenses/expense-detail/expense-detail.component';
 export class RoutesPath {
   public static readonly Home: string = 'home';
   public static readonly ExpensesList: string = 'expenses-list';
@@ -25,6 +25,7 @@ const routes: Routes = [
     title: 'Home'
   },
   { path: RoutesPath.ExpensesList, component: ExpensesListComponent, title: 'Expenses' },
+  { path: RoutesPath.AddExpense, component: ExpenseDetailComponent, title: 'Add expense' },
   { path: RoutesPath.CategoriesList, component: CategoriesListComponent, title: 'Categories' }, 
 ];
 

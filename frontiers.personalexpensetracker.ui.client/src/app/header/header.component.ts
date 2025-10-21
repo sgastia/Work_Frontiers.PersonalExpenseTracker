@@ -23,6 +23,11 @@ export class HeaderComponent {
     this.router.navigate([RoutesPath.ExpensesList]);
   }
 
+  navigateToAddExpense() {
+    this.router.navigate([RoutesPath.AddExpense]);
+  }
+
+
   navigateToCategories() {
     this.router.navigate([RoutesPath.CategoriesList]);
   }

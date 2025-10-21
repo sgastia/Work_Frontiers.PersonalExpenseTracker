@@ -3,12 +3,14 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { Expense, ExpenseInput } from './expense-models';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExpenseService {
-  private readonly baseUrl = '/api/expense';
+  //private readonly baseUrl = '/api/expense';
+  private readonly baseUrl = `${environment.apiUrl.replace(/\/$/,'')}/expense`
 
   constructor(private readonly http: HttpClient) {}
 

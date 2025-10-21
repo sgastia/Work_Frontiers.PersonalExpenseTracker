@@ -12,11 +12,23 @@ namespace Frontiers.PersonalExpenseTracker.UI.Server
             //https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi
             builder.Services.AddOpenApi();
 
+            //https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-9.0
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend",
+                    policy => policy.WithOrigins("https://localhost:62471")//TODO: Get this from config
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod());
+            });
+
             builder.Services.AddControllers();
 
             builder.Services.RegisterServices();
 
             var app = builder.Build();
+
+            //https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-9.0
+            app.UseCors("AllowFrontend");
 
             app.UseDefaultFiles();
             app.MapStaticAssets();
