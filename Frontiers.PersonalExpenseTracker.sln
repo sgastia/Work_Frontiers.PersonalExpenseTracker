@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36603.0 d17.14
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontiers.personalexpensetracker.ui.client", "frontiers.personalexpensetracker.ui.client\frontiers.personalexpensetracker.ui.client.esproj", "{A509CE74-A39C-6601-B13A-BC60CBC14136}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontiers.PersonalExpenseTracker.UI.Server", "Frontiers.PersonalExpenseTracker.UI.Server\Frontiers.PersonalExpenseTracker.UI.Server.csproj", "{33E64990-8F1F-4091-97DA-A2B302E4E970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontiers.PersonalExpenseTracker.Core", "Frontiers.PersonalExpenseTracker.Core\Frontiers.PersonalExpenseTracker.Core.csproj", "{DA87A7BA-35E7-4869-9532-3A555A9336A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontiers.PersonalExpenseTracker.Core.DomainServices", "Frontiers.PersonalExpenseTracker.Core.DomainServices\Frontiers.PersonalExpenseTracker.Core.DomainServices.csproj", "{9B3D133B-29DD-49F4-964C-6FA26536DB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontiers.PersonalExpenseTracker.Infrastructure", "Frontiers.PersonalExpenseTracker.Infrastructure\Frontiers.PersonalExpenseTracker.Infrastructure.csproj", "{722171BA-1A81-4900-B069-9C45291EF9D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,18 @@ Global
 		{33E64990-8F1F-4091-97DA-A2B302E4E970}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33E64990-8F1F-4091-97DA-A2B302E4E970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33E64990-8F1F-4091-97DA-A2B302E4E970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA87A7BA-35E7-4869-9532-3A555A9336A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA87A7BA-35E7-4869-9532-3A555A9336A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA87A7BA-35E7-4869-9532-3A555A9336A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA87A7BA-35E7-4869-9532-3A555A9336A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3D133B-29DD-49F4-964C-6FA26536DB6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3D133B-29DD-49F4-964C-6FA26536DB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3D133B-29DD-49F4-964C-6FA26536DB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3D133B-29DD-49F4-964C-6FA26536DB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722171BA-1A81-4900-B069-9C45291EF9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722171BA-1A81-4900-B069-9C45291EF9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722171BA-1A81-4900-B069-9C45291EF9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722171BA-1A81-4900-B069-9C45291EF9D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
