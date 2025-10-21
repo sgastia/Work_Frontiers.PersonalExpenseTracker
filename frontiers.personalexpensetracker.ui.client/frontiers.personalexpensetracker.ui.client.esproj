@@ -9,7 +9,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\categories\" />
-    <Folder Include="src\app\expenses\" />
     <Folder Include="src\app\reports\" />
   </ItemGroup>
 </Project>
