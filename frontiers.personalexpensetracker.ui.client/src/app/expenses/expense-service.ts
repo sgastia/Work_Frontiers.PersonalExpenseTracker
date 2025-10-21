@@ -55,9 +55,11 @@ export class ExpenseService {
   }
 
   createExpense(input: ExpenseInput): Observable<Expense> {
-    return this.http
-      .post<Expense>(this.baseUrl, input)
+    console.log("createExpense - url: " + this.baseUrl, input);
+    let created = this.http
+      .post<Expense>(this.baseUrl + "asdfasdf", input)
       .pipe(catchError(this.handleError));
+    return created;
   }
 
   updateExpense(id: string, input: Partial<ExpenseInput>): Observable<Expense> {
