@@ -7,4 +7,9 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\frontiers.personalexpensetracker.ui.client\browser\</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\categories\" />
+    <Folder Include="src\app\expenses\" />
+    <Folder Include="src\app\reports\" />
+  </ItemGroup>
 </Project>

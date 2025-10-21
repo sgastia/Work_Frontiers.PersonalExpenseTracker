@@ -1,0 +1,8 @@
+<button matButton (click)="navigateToHome()">Home</button>
+<button matButton (click)="navigateToExpenses()">Expenses</button>
+<button matButton (click)="navigateToCategories()">Categories</button>
+<button matButton [matMenuTriggerFor]="reportsMenu">Reports</button>
+<mat-menu #reportsMenu="matMenu">
+  <button mat-menu-item (click)="navigateToExpensesByCategoryReport()">Summary</button>
+</mat-menu>
+
